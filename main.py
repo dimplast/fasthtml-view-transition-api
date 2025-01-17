@@ -100,7 +100,7 @@ def list_of_users(users):
 def main():
         return Div(
             list_of_users(users),
-            cls="container mx-auto mx-48 p-6 bg-gray-100"
+            cls="flex items-center justify-center max-w-sm min-h-screen mx-auto"
         )
 
 @rt('/get_user/{id}')
