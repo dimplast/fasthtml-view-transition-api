@@ -50,7 +50,7 @@ hdrs = (
     '''),
 )
 
-app, rt = fast_app(live=True, pico=False, hdrs=hdrs)
+app, rt = fast_app(live=False, pico=False, hdrs=hdrs)
 
 @rt("/{fname:path}.{ext:static}")
 def get(fname:str, ext:str): 
